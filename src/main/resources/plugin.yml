@@ -1,0 +1,6 @@
+name: CarrotsCorrupter
+version: ${project.version}
+main: me.mrdev.carrotscorrupter.CarrotsCorrupter
+commands:
+   cc:
+      descritpion: cc rgr
