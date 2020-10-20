@@ -1,3 +1,3 @@
 # Carrots-Corrupter
 
-Carrots-Corrupter a tool that corrupts all your inventory items with carrots 
+Carrots-Corrupter is a tool that corrupts all your inventory items with carrots 
