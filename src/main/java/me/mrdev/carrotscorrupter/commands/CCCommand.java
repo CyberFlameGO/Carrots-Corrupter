@@ -12,18 +12,18 @@ import org.bukkit.entity.Player;
 public class CCCommand implements CommandExecutor {
 
     public CCCommand(CarrotsCorrupter plugin) {
-        plugin.getCommand("cc").setExecutor(this);
+        plugin.getCommand("cc").setExecutor(this); // /cc command
     }
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if(!(sender instanceof Player)) {
-            sender.sendMessage("Ingame command only !");
+            sender.sendMessage("Execute this command as a player!"); //only executable as player, not console/commandblock/whatever
             return false;
         }else {
-            Player player = (Player)sender;
-            player.getInventory().addItem(PlayersListeners.getCarrotCorrupter());
-            player.sendMessage(ChatColor.GOLD + "You have received the Carrot Corrupter");
+            Player player = (Player)sender
+            player.getInventory().addItem(PlayersListeners.getCarrotCorrupter()); //gives player carrot corrupter
+            player.sendMessage(ChatColor.GOLD + "You have received the Carrot Corrupter!"); //notifies player that they've received item.
         }
         return true;
     }
