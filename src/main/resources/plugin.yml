@@ -1,5 +1,6 @@
 name: CarrotsCorrupter
 version: ${project.version}
+description: Corrupts all your inventory items with carrots. https://github.com/Kitsurvival-Development/Carrots-Corrupter 
 main: me.mrdev.carrotscorrupter.CarrotsCorrupter
 commands:
    cc:
